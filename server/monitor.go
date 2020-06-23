@@ -1129,14 +1129,14 @@ func (s *Server) HandleRoot(w http.ResponseWriter, r *http.Request) {
 	s.mu.Unlock()
 	fmt.Fprintf(w, `<html lang="en">
    <head>
-    <link rel="shortcut icon" href="http://nats.io/img/favicon.ico">
+    <link rel="shortcut icon" href="https://nats.io/img/favicon.ico">
     <style type="text/css">
       body { font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif; font-size: 22; }
       a { margin-left: 32px; }
     </style>
   </head>
   <body>
-    <img src="http://nats.io/img/logo.png" alt="NATS">
+    <img src="https://nats.io/img/logo.png" alt="NATS">
     <br/>
 	<a href=%s>varz</a><br/>
 	<a href=%s>connz</a><br/>
@@ -1145,7 +1145,7 @@ func (s *Server) HandleRoot(w http.ResponseWriter, r *http.Request) {
 	<a href=%s>leafz</a><br/>
 	<a href=%s>subsz</a><br/>
     <br/>
-    <a href=https://docs.nats.io/nats-server/configuration/monitoring.html>help</a>
+    <a href=https://docs.nats.io/nats-server/configuration/monitoring.html rel="noreferrer">help</a>
   </body>
 </html>`,
 		s.basePath(VarzPath),
